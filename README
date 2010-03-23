@@ -1,0 +1,14 @@
+Free Pokemon remake started in 2008 by Robin Stjerndorff.
+Current developers:
+Zayfox - Project head, coder, visionary
+gnuwtey - Coder
+
+Past developers:
+personjerry
+portets
+
+Required compilation libraries:
+libsdl libsdl_image libsdl_ttf libsdl_gfx libopenal libvorbisfile libalut
+
+Illusive Creation - Imagination forge
+http://www.illusivecreation.net/

@@ -1,0 +1,6 @@
+playername = 0x00
+rivalname = 0x001
+profname = 0x002
+badges = 0x003
+dexseen = 0x04
+dexcaught = 0x05
