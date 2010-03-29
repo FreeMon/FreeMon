@@ -54,6 +54,7 @@ void input_update() {
                                 r_battle=true;
                                 battle=true;
                                 fight = monsters[0];
+                                fight.health /= 2;
 				def = party[0];
 				newSong("00.ogg");
                                 default:
@@ -77,7 +78,7 @@ void input_update() {
                                                                 case 1:
                                                                         r_menu=false;
                                                                         r_pokemenu=true;
-                                                                        menu_text = "Select a pokemon.";
+                                                                        menu_text = "Select a monster.";
                                                                         info_dialog(menu_text);
 								        soundevents.push_back(new Sound(soundbuffers[0]));
 							        	soundevents.back()->play();
@@ -109,7 +110,7 @@ void input_update() {
 
 						case SDLK_e:
 							switch(menu_choice) {
-                                                          // POKEMON NOT IMPLEMENTED YET!
+                                                          // "VIEW POKEMON" NOT IMPLEMENTED YET!
                                                           default:
                                                                   break;
 							}
@@ -166,7 +167,7 @@ void input_update() {
 							case 2: // delegate choosing pokemon to pokemenu
 								r_pokemenu=true;
 								r_menu = false;
-								menu_text = "Choose a buntoid.";
+								menu_text = "Choose a monster.";
 								info_dialog(menu_text);
                                                         break;
 							
@@ -180,7 +181,7 @@ void input_update() {
 							{
 								r_pokemenu=true;
 								r_menu = false;
-								menu_text = "Choose a buntoid.";
+								menu_text = "Choose a monster.";
 								info_dialog(menu_text);
 							}
 							else

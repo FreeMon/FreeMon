@@ -3,8 +3,6 @@
 #include "bot.h"
 
 #include <iostream>
-#include <string>
-#include <sstream>
 
 std::vector<Bot> bots;
 
@@ -87,10 +85,6 @@ void Bot::update() {
 }
 
 std::string& Bot::say() {
-	string msg;
-	string playername("Elliot");
-	int pos=msg.find("%PLAYERNAME%");
-	msg.replace(pos, playername.size(), player);
-	return msg;
+	return message;
 }
 
